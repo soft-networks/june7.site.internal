@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const OPEN_ROUTER_API_KEY = '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';
+const OPEN_ROUTER_API_KEY = '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';
 
 export async function POST(request: NextRequest) {
     const { message } = await request.json();
