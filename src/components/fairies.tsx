@@ -14,7 +14,7 @@ const girlies = ["josie", "kaylin", "hannah", "mira", "maya", "lila", "andria", 
 
 export function Fairies() {
     return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>
+        <div style={{ width: '100vw', height: '100vh', position: 'relative', overflow: 'hidden', zIndex: 0}}>
             {girlies.map((girly, i) => {
                 const fairyImg = fairyArray[i % fairyArray.length];
                 return (
@@ -50,10 +50,10 @@ export function Fairies() {
                         <style jsx>{`
                             @keyframes fly${i} {
                                 0%, 100% {
-                                    transform: translateX(-100px) translateY(${Math.random() * 100}%);
+                                    transform: translateX(-100px) translateY(${Math.random() * 100}vh);
                                 }
                                 50% {
-                                    transform: translateX(100%) translateY(${Math.random() * 100}%);
+                                    transform: translateX(100vw) translateY(${Math.random() * 100}vh);
                                 }
                             }
                         `}</style>
