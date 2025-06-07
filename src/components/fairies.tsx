@@ -29,15 +29,15 @@ export function Fairies() {
                             src={fairyImg} 
                             alt={girly}
                             style={{
-                                width: '150px',
-                                height: '150px',
+                                width: '100px',
+                                height: '100px',
                                 objectFit: 'contain',
                                 transform: 'translate(-50%,-50%)'
                             }}
                         />
                         <div style={{
                             position: 'absolute',
-                            top: '-20px',
+                            top: '0',
                             left: '50%',
                             transform: 'translateX(-50%)',
                             fontFamily: 'Brush Script MT, cursive',

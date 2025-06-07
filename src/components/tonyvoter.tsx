@@ -59,7 +59,7 @@ const TonyResults = () => {
         }} className="stack:s-2" >
             {!voteResults && <p>loading....</p>}
             {voteResults && voteResults["nicole"] > voteResults["audra"] && <div className="stack"><img src="https://www.theatermania.com/wp-content/uploads/sites/4/2024/08/nicole-scherzinger-.jpg.webp" style={{width: "50px", borderRadius: "50%"}}></img><p>Nicole wins!</p></div>}
-            {voteResults && voteResults["audra"] > voteResults["nicole"] && <div className="stack"><img src="https://m.media-amazon.com/images/M/MV5BMTUzMzY3NzA0OV5BMl5BanBnXkFtZTcwODQ4OTI2Mg@@._V1_.jpg" style={{width: "50px", borderRadius: "50%"}}></img><p>Audra wins!</p></div>}
+            {voteResults && voteResults["audra"] >= voteResults["nicole"] && <div className="stack"><img src="https://m.media-amazon.com/images/M/MV5BMTUzMzY3NzA0OV5BMl5BanBnXkFtZTcwODQ4OTI2Mg@@._V1_.jpg" style={{width: "50px", borderRadius: "50%"}}></img><p>Audra wins!</p></div>}
         </div>
     )
 }

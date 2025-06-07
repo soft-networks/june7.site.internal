@@ -16,34 +16,7 @@ export const Happiness = () => {
 
     return (
         <>
-            <div style={{ position: "absolute", top: "-80px", alignItems: "flex-end"}} className="stack:horizontal">
-                <img 
-                    src="https://blob.gifcities.org/gifcities/2DHA5QEVF4RKHQP3FJCF6ZN7BROBS7RP.gif" 
-                    style={{
-                        width: "150px"
-                    }}
-                />
-                <img 
-                    src="https://blob.gifcities.org/gifcities/EZUZQGBU3UMQACREUC27YTHQRHBNJL5M.gif" 
-                    style={{
-                        height: "150px"
-                    }}
-                />
-                <img 
-                    src="https://m.media-amazon.com/images/I/71i3D6bC9DL._AC_UF1000,1000_QL80_.jpg" 
-                    style={{
-                        width: "100px", 
-                        height: "100px"
-                    }}
-                />
-                <img 
-                    src="https://blob.gifcities.org/gifcities/45E6OV6JI5GQFSEFTPBMEBAY6ZBL7UZA.gif" 
-                    style={{
-                        width: "100px", 
-                        height: "100px"
-                    }}
-                />
-            </div>
+   
             {happinessTriggered && (
                 <div className="fullBleed" style={{opacity: 0.8}}>
                 <div style={{
@@ -76,6 +49,16 @@ export const Happiness = () => {
             }} style={{ width: "400px", height: "400px", backgroundImage: "url(https://blob.gifcities.org/gifcities/6TXIY7GTE5URQXBSMQRSDDQKGPREWRKB.gif)", backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat", cursor: "pointer"}}>
                 <div style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "white", fontSize: "20px", fontWeight: "bold", textShadow: "2px 2px 4px hotpink", textAlign: "center"}}>click 4 access 2 happiness!</div>
             </div>
+            <style jsx>{`
+                @keyframes crawl {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    100% {
+                        transform: translateX(100%);
+                    }
+                }
+            `}</style>
         </>
     )
 }

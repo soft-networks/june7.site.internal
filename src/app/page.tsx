@@ -11,6 +11,7 @@ import { TomCruise } from "@/components/tomcruise";
 import { SnackRecommender } from "@/components/snack-recommender";
 import { TomT } from "@/components/tom";
 import  TonyVoter  from "@/components/tonyvoter";
+import ImageCarousel from "@/components/imageCarousel";
 
 export default function Home() {
   return (
@@ -23,15 +24,19 @@ export default function Home() {
           <Cake />
         </div>
         <div style={{ position: "absolute", top: "10%", right: "10%" }}>
-          <Grimaldis />
         </div>
-        <div style={{ position: "absolute", bottom: "30%", right: "20%" , transform: "scale(0.75)"}} className="stack:horizontal">
+        <div style={{ position: "absolute", top: "10%", right: "20%" , transform: "scale(0.75)"}} className="stack:horizontal:s2">
           <TomT />
           <TomCruise />
         </div>
-        <div style={{ position: "absolute", top: "80%", left: "20%" }} className="stack:horizontal">
+        <div style={{position: "absolute", bottom: "20%", right: "20%"}}>
+          <ImageCarousel />
+        </div>
+        <div style={{ position: "absolute", top: "80%", left: "20%" }} className="stack:horizontal">     
           <SnackRecommender />
           <TonyVoter />
+          <Grimaldis />
+          
         </div>
       </div>
       <img src="https://blob.gifcities.org/gifcities/JGB2JFYBYIR33BHTPDB3XNZCCQEZXERL.gif" style={{position: "absolute", top: "90%", left: "0", width: "50vw"}}></img>
