@@ -14,7 +14,7 @@ export default function Home() {
         <Happiness />
         <LandscapeBackground />
       </div>
-      <div style={{position: "absolute", bottom: "10%", right: "10%" }}>
+      <div style={{position: "absolute", top: "10%", right: "10%" }}>
         <Grimaldis />
       </div>
       <div style={{position: "absolute", bottom: "30%", right: "20%" }}>
