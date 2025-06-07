@@ -7,7 +7,7 @@ import { Happiness } from "@/components/hapiness";
 export default function Home() {
   return (
     <div>
-      <div className="position:absolute">
+      <div style={{position: "absolute", bottom: "10%", left: "10%" }}>
         <Happiness />
       </div>
     </div>
