@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/p5": "^1.7.6",
     "firebase": "^11.8.1",
     "next": "15.3.3",
     "p5": "^2.0.3",
