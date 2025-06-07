@@ -36,6 +36,13 @@ export const Happiness = () => {
                         height: "100px"
                     }}
                 />
+                <img 
+                    src="https://blob.gifcities.org/gifcities/45E6OV6JI5GQFSEFTPBMEBAY6ZBL7UZA.gif" 
+                    style={{
+                        width: "100px", 
+                        height: "100px"
+                    }}
+                />
             </div>
             {happinessTriggered && (
                 <div className="fullBleed" style={{opacity: 0.8}}>
