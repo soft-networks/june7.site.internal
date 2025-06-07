@@ -45,7 +45,9 @@ export const Happiness = () => {
             )}
             <div className="cursor:pointer" onClick={() => {
                 setHappinessTriggered(true);
-            }} style={{ width: "200px", height: "200px", display: " flex", backgroundColor: "hotpink", color: "white", alignItems: "center", justifyContent: "center", borderRadius: "50%", textAlign: "center" }}>click here to choose yourself <br/>& choose happiness</div>
+            }} style={{ width: "400px", height: "400px", backgroundImage: "url(https://blob.gifcities.org/gifcities/6TXIY7GTE5URQXBSMQRSDDQKGPREWRKB.gif)", backgroundSize: "contain", backgroundPosition: "center", backgroundRepeat: "no-repeat", cursor: "pointer"}}>
+                <div style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", color: "white", fontSize: "20px", fontWeight: "bold", textShadow: "2px 2px 4px hotpink", textAlign: "center"}}>click 4 access 2 happiness!</div>
+            </div>
         </>
     )
 }
