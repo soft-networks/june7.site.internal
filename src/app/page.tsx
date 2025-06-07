@@ -13,12 +13,16 @@ import { TomT } from "@/components/tom";
 import  TonyVoter  from "@/components/tonyvoter";
 import ImageCarousel from "@/components/imageCarousel";
 import StickyNotes from "@/components/stickynotes";
+import YankeesScore from "@/components/yankeesscore";
 
 export default function Home() {
   return (
     <div>
       <div style={{position: "absolute", width: "100vw", height: "100vh", zIndex: 100}}>
       <Grimaldis />
+      <div style={{position: "absolute", top: "2%", left: "80%", scale: "0.5"}}>
+        <YankeesScore />
+      </div>
         <div style={{ position: "absolute", top: "10%", left: "10%" }}>
           <Happiness />
           
@@ -37,7 +41,7 @@ export default function Home() {
         <div style={{position: "absolute", bottom: "20%", right: "20%"}}>
           <ImageCarousel />
         </div>
-        <div style={{ position: "absolute", top: "80%", left: "20%" }} className="stack:horizontal">     
+        <div style={{ position: "absolute", top: "80%", left: "20%" }} className="stack:horizontal">   
           <SnackRecommender />
           <TonyVoter />
           <StickyNotes />
