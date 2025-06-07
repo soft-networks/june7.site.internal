@@ -6,6 +6,7 @@ import { Happiness } from "@/components/hapiness";
 import { LandscapeBackground } from "../components/landscapbackground";
 import { Grimaldis } from "@/components/grimaldis";
 import { TomCruise } from "@/components/tomcruise";
+import { SnackRecommender } from "@/components/snack-recommender";
 
 export default function Home() {
   return (
@@ -19,6 +20,9 @@ export default function Home() {
       </div>
       <div style={{position: "absolute", bottom: "30%", right: "20%" }}>
         <TomCruise />
+      </div>
+      <div style={{position: "absolute", top: "10%", left: "50%" }}>
+        <SnackRecommender />
       </div>
     </div>
   );
