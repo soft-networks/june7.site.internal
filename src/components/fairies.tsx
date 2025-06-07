@@ -13,17 +13,8 @@ const fairyArray = [
 const girlies = ["josie", "kaylin", "hannah", "mira", "maya", "lila", "andria", "bobo"]
 
 export function Fairies() {
-    const [windowWidth, setWindowWidth] = useState(0);
-
-    useEffect(() => {
-        setWindowWidth(window.innerWidth);
-        const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
     return (
-        <div>
+        <div style={{ width: '100%', height: '100%', position: 'relative', overflow: 'hidden' }}>
             {girlies.map((girly, i) => {
                 const fairyImg = fairyArray[i % fairyArray.length];
                 return (
@@ -31,8 +22,7 @@ export function Fairies() {
                         key={girly}
                         style={{
                             position: 'absolute',
-                            animation: `fly${i} ${20 + i * 2}s infinite linear`,
-                            zIndex: 1000
+                            animation: `fly${i} ${40 + i * 2}s infinite linear`,
                         }}
                     >
                         <img 
@@ -60,10 +50,10 @@ export function Fairies() {
                         <style jsx>{`
                             @keyframes fly${i} {
                                 0%, 100% {
-                                    transform: translateX(-100px) translateY(${Math.random() * 100}vh);
+                                    transform: translateX(-100px) translateY(${Math.random() * 100}%);
                                 }
                                 50% {
-                                    transform: translateX(${windowWidth + 100}px) translateY(${Math.random() * 100}vh);
+                                    transform: translateX(100%) translateY(${Math.random() * 100}%);
                                 }
                             }
                         `}</style>

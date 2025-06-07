@@ -9,7 +9,7 @@ export function TomCruise() {
             alignItems: 'center'
         }}>
             <Image src='/cruise.png' alt='Tom Cruise' width={200} height={200} />
-            <div>I do my own stunts! Like this one!</div>
+            <div style={{textAlign: "center"}}>I do my own stunts! <br/>Like this one!</div>
             <style jsx>{`
                 @keyframes rotate {
                     from {
