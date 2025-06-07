@@ -12,16 +12,21 @@ import { SnackRecommender } from "@/components/snack-recommender";
 import { TomT } from "@/components/tom";
 import  TonyVoter  from "@/components/tonyvoter";
 import ImageCarousel from "@/components/imageCarousel";
+import StickyNotes from "@/components/stickynotes";
 
 export default function Home() {
   return (
     <div>
       <div style={{position: "absolute", width: "100vw", height: "100vh", zIndex: 100}}>
+      <Grimaldis />
         <div style={{ position: "absolute", top: "10%", left: "10%" }}>
           <Happiness />
+          
         </div>
         <div style={{ position: "absolute", top: "70%", left: "20%", transform: "translate(-50%, -50%)" }}>
+          
           <Cake />
+          
         </div>
         <div style={{ position: "absolute", top: "10%", right: "10%" }}>
         </div>
@@ -35,7 +40,7 @@ export default function Home() {
         <div style={{ position: "absolute", top: "80%", left: "20%" }} className="stack:horizontal">     
           <SnackRecommender />
           <TonyVoter />
-          <Grimaldis />
+          <StickyNotes />
           
         </div>
       </div>

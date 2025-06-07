@@ -46,3 +46,18 @@ export const getVotes = async () => {
     console.log(voteCounts);
     return voteCounts;
 }
+
+
+export const getNotes = async () => {
+    const notesRef = collection(db, "notes");
+    const snapshot = await getDocs(notesRef);
+    const notes = snapshot.docs.map((doc: any) => doc.data().note);
+    return notes;
+}
+
+export const addNote = (note: string) => {
+    const notesRef = collection(db, "notes");
+    addDoc(notesRef, {
+        note: note
+    });
+}
